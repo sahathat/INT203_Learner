@@ -12,7 +12,10 @@ This a lesson.
 1. Basic vue
 
 - Basic web app with Vue v3 and Vite build tool
-1.1. [vite]()
+
+1.1. [vite](https://github.com/sahathat/INT203_Learner/tree/main/1/1-1/vite/hi-vite)
+
+1.2. 
 
 - Rendering
 
