@@ -4,20 +4,32 @@
 
 - ช่วยไปจัดการ การทำ script(js), template(html), style(css) แล้วฝั่ง Vue จัดการ source code เอาเอง
 
+### โครงสร้างของ SFC ใน vue
+```vue
+<script setup>
+</script>
+
+<template>
+</template>
+
+<style>
+</style>
+```
+
 ## Rendering
 - v-text
 ทำหน้าที่ ใส่ text content ใน html จาก expression ที่กำหนดเอาไว้
 ```vue
-    <!-- template -->
-    <span v-text="counter"></span> + {{ counter }} = {{ 2 * counter }} <br>
+<!-- template -->
+<span v-text="counter"></span> + {{ counter }} = {{ 2 * counter }} <br>
 ```
 
 - v-html
 ทำหน้าที่ ใส่ raw html ใน html จาก expression ที่กำหนดเอาไว้
 ```vue
-    <!-- template -->
-    <span v-html="rawHtml"> </span> <!-- DOM.innerHTML -->
-    <span> {{rawHtml}} </span> <!-- DOM.TextContent -->
+<!-- template -->
+<span v-html="rawHtml"> </span> <!-- DOM.innerHTML -->
+<span> {{rawHtml}} </span> <!-- DOM.TextContent -->
 ```
 
 - v-bind
@@ -37,17 +49,17 @@ const greenText = "color:Green" //class style v-bind
 - v-show
 เมื่อเอาไปทดสอบกับหน้าเว็ปพบว่า ถ้าพบว่าเงื่อนไขเป็น false จะแสดงค่า display="none" ใน element ที่ติด v-show
 ```vue
-    <!-- template -->
-    <span v-show="true">The web are display</span>
+<!-- template -->
+<span v-show="true">The web are display</span>
 ```
 
 - v-if
 เมื่อเอาไปทดสอบกับหน้าเว็ปพบว่า ถ้าพบว่าเงื่อนไขเป็น false จะซ้อน element และจะแทนที่ด้วย comment แทน
 ```vue
-    <!-- template -->
-    <p v-if="score >= 80">A</p>
-    <p v-else-if="score>= 70">B</p>
-    <p v-else>C</p>
+<!-- template -->
+<p v-if="score >= 80">A</p>
+<p v-else-if="score>= 70">B</p>
+<p v-else>C</p>
 ```
 
 - v-for
