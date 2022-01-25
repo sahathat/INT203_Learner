@@ -15,13 +15,13 @@ This a lesson.
 
     1.1. [vite](https://github.com/sahathat/INT203_Learner/tree/main/1/1-1/vite/hi-vite)
 
-    1.2. [render syntax](
+    1.2. [render syntax](https://github.com/sahathat/INT203_Learner/tree/main/1/1-2/render-syntax)
 
   - Rendering
     
-    2.1. [render syntax con](
+    2.1. [render syntax con](https://github.com/sahathat/INT203_Learner/tree/main/2/lab/render-syntax-continue)
 
-    2.2. [assignment](
+    2.2. [assignment](https://github.com/sahathat/INT203_Learner/tree/main/2/assignment)
 
   - Event Handling and Form Input Bindings
    
