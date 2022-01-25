@@ -11,20 +11,25 @@ This a lesson.
 
 1. Basic vue
 
-- Basic web app with Vue v3 and Vite build tool
+  - Basic web app with Vue v3 and Vite build tool
 
-1.1. [vite](https://github.com/sahathat/INT203_Learner/tree/main/1/1-1/vite/hi-vite)
+    1.1. [vite](https://github.com/sahathat/INT203_Learner/tree/main/1/1-1/vite/hi-vite)
 
-1.2. 
+    1.2. [render syntax](
 
-- Rendering
+  - Rendering
+    
+    2.1. [render syntax con](
 
-- Event Handling and Form Input Bindings
+    2.2. [assignment](
+
+  - Event Handling and Form Input Bindings
+   
 
 2. Basic component and State Routing
 
-- Components and Component in-Depth
+  - Components and Component in-Depth
 
-- Vue Routing
+  - Vue Routing
 
-- State Management
+  - State Management
