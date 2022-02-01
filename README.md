@@ -27,7 +27,7 @@ This a lesson.
     
     3.1. [Ref and Reactive](https://github.com/sahathat/INT203_Learner/tree/main/3/3-1/ref-reactive)
 
-    3.2. [ToRef and ToRefs](https://github.com/sahathat/INT203_Learner/tree/main/3/3-1/ref-reactive)
+    3.2. [ToRef and ToRefs](https://github.com/sahathat/INT203_Learner/tree/main/3/3-1/ref-reactive#reactive-to-ref-object)
 
   - Event Handling and Form Input Bindings
     
