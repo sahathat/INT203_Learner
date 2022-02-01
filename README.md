@@ -23,9 +23,17 @@ This a lesson.
 
     2.2. [assignment](https://github.com/sahathat/INT203_Learner/tree/main/2/assignment)
 
-  - Event Handling and Form Input Bindings
-   
+  - Ref and Reactive
+    
+    3.1. [Ref and Reactive](https://github.com/sahathat/INT203_Learner/tree/main/3/3-1/ref-reactive)
 
+    3.2. [ToRef and ToRefs](https://github.com/sahathat/INT203_Learner/tree/main/3/3-1/ref-reactive)
+
+  - Event Handling and Form Input Bindings
+    3.3. [v-on](https://github.com/sahathat/INT203_Learner/tree/main/3/3-2/event)
+
+    3.4. [v-model](https://github.com/sahathat/INT203_Learner/tree/main/3/3-3/event)
+   
 2. Basic component and State Routing
 
   - Components and Component in-Depth

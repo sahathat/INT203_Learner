@@ -14,14 +14,6 @@ function ShowStatus(amount) {
   return amount > 0 ? showGreen : amount < 0 ? showRed : -1;
 }
 
-function IsNotZero(amount) {
-  return amount != 0 ? true : false;
-}
-
-let sum = accountList.reduce(
-  (previousTotal, currentValue) => previousTotal + currentValue.amount,
-  0
-);
 </script>
 
 <template>
@@ -38,13 +30,13 @@ let sum = accountList.reduce(
         <tbody>
           <tr v-for="account in accountList" :key="index">
             <td
-              v-show="IsNotZero(account.amount)"
+              v-show="account.amount !== 0"
               :class="ShowStatus(account.amount)"
             >
               {{ account.name }}
             </td>
             <td
-              v-show="IsNotZero(account.amount)"
+              v-show="account.amount !== 0"
               :class="ShowStatus(account.amount)"
             >
               {{ account.amount }}
@@ -54,7 +46,7 @@ let sum = accountList.reduce(
         <tfoot>
           <tr>
             <td scope="col">Net total</td>
-            <td scope="col">{{ sum }}</td>
+            <td scope="col">{{ accountList.reduce((previousTotal, currentValue) => previousTotal + currentValue.amount,0) }}</td>
           </tr>
         </tfoot>
       </table>
