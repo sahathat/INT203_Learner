@@ -1,21 +1,32 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import {ref,reactive, computed} from "vue"
+let noteList = reactive([])
+let show = ref(false)
+let count = ref(0)
+let add = ref("")
+let addNote = () => {
+  if(add.value !== ""){
+    noteList.push({id: ++count.value,name: add.value})
+    show.value = true
+  }
+}
+
+let search= ref("")
+let FilterNote = computed(() => noteList.filter(note => note.name.toLowerCase().includes(search.value.toLowerCase())))
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+<div>
+  <span v-if="show">Filter Note: <input type="text" v-model="search"></span>
+  <ul>
+    <li v-for="(note,index) in FilterNote" :key="index">{{note.name}}</li>
+  </ul>
+  <span>New Note: <input type="text" v-model="add"> <button @click="addNote">Add Note</button></span>
+  <!-- <h1>{{add}}</h1>
+  <h1>{{noteList}}</h1>
+  <h1>{{FilterNote}}</h1> -->
+</div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
