@@ -35,7 +35,7 @@ This a lesson.
 
     3.4. [v-model](https://github.com/sahathat/INT203_Learner/tree/main/3/3-3/form-input)
     
-    3.5. [assignment2](https://github.com/sahathat/INT203_Learner/tree/main/3/assignment/2)
+    3.5. [assignment2](https://github.com/sahathat/INT203_Learner/tree/main/3/assignment/2/note-list)
    
 2. Basic component and State Routing
 
