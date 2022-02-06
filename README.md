@@ -34,6 +34,8 @@ This a lesson.
     3.3. [v-on](https://github.com/sahathat/INT203_Learner/tree/main/3/3-2/event)
 
     3.4. [v-model](https://github.com/sahathat/INT203_Learner/tree/main/3/3-3/form-input)
+    
+    3.5. [assignment2](https://github.com/sahathat/INT203_Learner/tree/main/3/assignment/2)
    
 2. Basic component and State Routing
 
