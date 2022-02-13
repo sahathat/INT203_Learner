@@ -10,7 +10,7 @@ const activities = ref([]); //select multiple
 
 <template>
   <!--textarea-->
-  <div>
+  <div class="container">
     suggestion <br />
     <textarea
       v-model="suggestion"
