@@ -24,7 +24,7 @@ let Increment = () => count.value++
 
 # computed()
 
-run with out function name and parameter.
+return value by pass function.
 
 ```vue
 <script setup>
@@ -34,6 +34,7 @@ let Increment = computed(() => count.value++)
 </script>
 
 <template>
-    <button @click='Increment'>{{count}}</button>
+    <p>{{count}}</p>
+    <p>{{Increment}}</p>
 </template>
 ```
