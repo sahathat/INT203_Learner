@@ -22,6 +22,10 @@ let Increment = () => count.value++
 </template>
 ```
 
+Can add parameter to add index into array.
+
+
+
 # computed()
 
 return value by pass function.
