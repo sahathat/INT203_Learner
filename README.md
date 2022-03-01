@@ -40,10 +40,17 @@ This a lesson.
     4.1. [form type of model](https://github.com/sahathat/INT203_Learner/tree/main/3/3-3/form-type)
 
     4.2. [class style binding](https://github.com/sahathat/INT203_Learner/tree/main/3/3-4/class-binding)
+
+    4.3. [assignment3](https://github.com/sahathat/INT203_Learner/tree/main/3/assignment/3/shopping-mail)
+
+    4.4. [assignment4](https://github.com/sahathat/INT203_Learner/tree/main/3/assignment/4/contract) unfinish
    
 2. Basic component and State Routing
 
   - Components and Component in-Depth
+    5.1. [class style binding](https://github.com/sahathat/INT203_Learner/tree/main/4/4-1/class-binding)
+
+    5.2. [assignment5](https://github.com/sahathat/INT203_Learner/tree/main/4/assignment/5/github_account)
 
   - Vue Routing
 
