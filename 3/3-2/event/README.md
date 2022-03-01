@@ -22,9 +22,36 @@ let Increment = () => count.value++
 </template>
 ```
 
+Can add parameter to event by checking.
+```vue
+<script setup>
+let ThatMe1 = (e,n) => console.log("That me",e,n)
+let ThatMe2 = (n,e) => console.log("That me",e,n)
+</script>
+
+<template>
+    <button @click='ThatMe($event,999)'> click me</button>
+</template>
+```
+
 Can add parameter to add index into array.
+```vue
+<script setup>
+let array = ref([0,0,0,0,0,0,0,0,0])
+let AddNumber = (e) => {
+    array.value[e] += 1;
+}
+</script>
 
-
+<template>
+    <div v-for="item in array">
+        <span>
+            <button @click='AddNumber($event)'>click me</button>
+            {{item}}
+        </span> <br>
+    </div>
+</template>
+```
 
 # computed()
 
