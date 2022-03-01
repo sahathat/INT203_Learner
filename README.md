@@ -48,7 +48,8 @@ This a lesson.
 2. Basic component and State Routing
 
   - Components and Component in-Depth
-    5.1. [class style binding](https://github.com/sahathat/INT203_Learner/tree/main/4/4-1/class-binding)
+  - 
+    5.1. [basic component](https://github.com/sahathat/INT203_Learner/tree/main/4/4-1/hello-component)
 
     5.2. [assignment5](https://github.com/sahathat/INT203_Learner/tree/main/4/assignment/5/github_account)
 
