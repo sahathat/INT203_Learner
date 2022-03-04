@@ -2,8 +2,8 @@
 
 # Requirement
 
-![Requirement2](public/Requirement2.PNG)
+![Requirement2](public/Requirement2.png)
 
 
-![Requirement3](public/Requirement3.PNG)
+![Requirement3](public/Requirement3.png)
 
