@@ -53,6 +53,11 @@ This a lesson.
 
     5.2. [assignment5](https://github.com/sahathat/INT203_Learner/tree/main/4/assignment/5/github_account)
 
-  - Vue Routing
+    5.3. [define props extra](https://github.com/sahathat/INT203_Learner/tree/main/4/4-2/hello-props)
+    
+    5.4. [life cycle diagram](https://github.com/sahathat/INT203_Learner/tree/main/4/4-3/life-cycle-test)
+    
+    5.5. [assignment6](https://github.com/sahathat/INT203_Learner/tree/main/4/assignment/6/multiply-list)
+  - Fetch API and Vue Routing
 
   - State Management
