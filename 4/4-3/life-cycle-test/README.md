@@ -16,4 +16,4 @@
    
 4. Before unmount and unmounted: ลบ element tag ที่ mount ไว้ 
 
-- [Life cycle](https://vuejs.org/guide/essentials/lifecycle.html#registering-lifecycle-hooks)
+**Ref:** [Life cycle](https://vuejs.org/guide/essentials/lifecycle.html#lifecycle-diagram)
