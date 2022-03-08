@@ -1,7 +1,6 @@
 <script setup>
 let buttonEmits = defineEmits(['confirm'])
 </script>
- 
 
 <template>
 <div>
