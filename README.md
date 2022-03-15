@@ -61,4 +61,6 @@ This a lesson.
   
   - Fetch API and Vue Routing
 
+    6.1. [fetch api](https://github.com/sahathat/INT203_Learner/tree/main/5/5-1/hello/hellofetch)
+
   - State Management
