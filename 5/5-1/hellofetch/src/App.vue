@@ -38,7 +38,6 @@ onBeforeMount(async () => {
 
 // PUT (U) , status 200 OK
 const editingNote = ref({})
-
 let toEditMode = (updatedNote) => {
   editingNote.value = updatedNote
   console.log(editingNote.value)
@@ -61,7 +60,7 @@ let updatedNote = async (editingNote) => {
       ? {...note, name: editedNote.name}
       : note
     )
-    console.log(editedNote)
+    console.log(editedNote.id + " has been update")
   } else {
     console.log("error by status " + res.status)
   }
