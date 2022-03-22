@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import ListMultiply from './components/ListMultiply.vue';
 import ClearButton from './components/ClearButton.vue';
+import MakeTable from './components/MakeTable.vue';
 
 // initial values
 let num = ref(2)
@@ -30,7 +31,9 @@ let clearItem = () => {
 <div>
   <b>Number:</b> <input type="number" v-model="num"> <br> <br>
   <b>Time:</b> <input type="number" v-model="time">
-  <ListMultiply @makeTable="makedTable" :List="list" @delete="deleteItem"></ListMultiply>
+  
+  <ListMultiply :list="list" @delete="deleteItem"></ListMultiply>
+  <MakeTable :number="num" :time="time" @makeTable="makedTable"></MakeTable>
   <ClearButton @clear="clearItem"></ClearButton>
 </div>
 </template>

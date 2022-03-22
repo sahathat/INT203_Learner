@@ -1,5 +1,7 @@
 # Vue 3 + Vite
 
-# Requirement
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-ทำตารางสูตรคูณออกมา ให้สามารถตั้งค่า value ที่สามารถ เก็บผลคูณ และจำนวนครั้งออกมา และสามารถ ลบผลคูณบางตัว ออกได้ ถ้าเรามีปุ่มไว้ใช้ในการลบ และสามารถลบข้อมูลได้ทุกตัวถ้าหาก กดปุ่ม clear ให้ใช้เป็น components เท่านั้น
+## Recommended IDE Setup
+
+- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)

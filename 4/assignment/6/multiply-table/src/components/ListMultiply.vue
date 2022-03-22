@@ -1,22 +1,19 @@
 <script setup>
-
-defineEmits(['makeTable','delete'])
+defineEmits(['delete'])
 defineProps({
-    List: {
+    list: {
         type: Array,
         require: true
     }
 })
-
 </script>
  
 <template>
 <ul>
-    <li v-for="(item, index) in List" :key="index">
+    <li v-for="(item, index) in list" :key="index">
         {{item}} <button @click="$emit('delete',item)">-</button>
     </li>
 </ul>
-<button @click="$emit('makeTable')">Ok</button>
 </template>
  
 <style>
