@@ -63,6 +63,6 @@ This a lesson.
 
     6.1. [fetch api](https://github.com/sahathat/INT203_Learner/tree/main/5/5-1/hellofetch)
     
-    6.2. [vue routing](https://github.com/sahathat/INT203_Learner/tree/main/5/5-2/hellorouter
+    6.2. [vue routing](https://github.com/sahathat/INT203_Learner/tree/main/5/5-2/hellorouter)
 
   - State Management
