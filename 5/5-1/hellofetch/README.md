@@ -1,7 +1,7 @@
 # Vue 3 + Vite
 
 
-# JSON	# JSON
+# JSON
 หรือ Java Script Object Notation เป็น object ใน javascript ที่ ถูกเขียนให้ key เป็น double quote และ value เหมือนกับ java object
 
 
