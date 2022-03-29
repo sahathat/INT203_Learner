@@ -65,4 +65,12 @@ This a lesson.
     
     6.2. [vue routing](https://github.com/sahathat/INT203_Learner/tree/main/5/5-2/hellorouter)
 
+    6.3. [assignment7](https://github.com/sahathat/INT203_Learner/tree/main/5/assignment/7)
+    
+    6.4. [assignment8](https://github.com/sahathat/INT203_Learner/tree/main/5/assignment/8)
+
   - State Management
+  
+    7.1. [state management](https://github.com/sahathat/INT203_Learner/tree/main/6/basic-state-counter-master/basic-state-counter-master)
+
+    7.2. [assignment9](https://github.com/sahathat/INT203_Learner/tree/main/6/assignment/9)
