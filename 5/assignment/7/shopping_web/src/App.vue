@@ -1,21 +1,35 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import {ref, onBeforeMount, onBeforeUpdate} from 'vue'
+
+let cart = ref([])
+
+let getProduct = async () => {
+  const res = await fetch("http://localhost:5000/cart");
+  if (res.status === 200) {
+    cart.value = await res.json();
+    console.log("select successful");
+  } else {
+    console.log("error by status " + res.status);
+  }
+};
+onBeforeMount(async () => {
+  await getProduct();
+});
 </script>
-
+ 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div>
+    <router-link to="/">Home</router-link> | 
+    <router-link to="/mycart">View cart({{ cart.length }})</router-link> | 
+    <router-link to="/credit">Credit</router-link>
+  </div>
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
-
+ 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.router-link-active {
+  color: red;
 }
 </style>

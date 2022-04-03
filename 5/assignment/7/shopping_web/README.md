@@ -1,7 +1,5 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Requirement
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+ทำเว็ป e commerce ให้เลือกสินค้า 1 ชนิดมาอะไรก็ได้ แล้วในนั้นต้องมีข้อมูล id product name รูปภาพ และ price เมื่อไปกดก็จะเข้าสู่หน้าเว็ปที่เป็นการดูลายละเอียดสินค้า ถ้าหากเราไปกดปุ่ม back ก็จะไปหน้าหลัก ถ้าหากเราไป add to cart สินค้าก็จะเข้าตะกร้า ถ้าหากเราไปลบสินค้าก็จะไปลบเฉพาะสินค้าที่เราไปดู เมื่อเราไปดูใน view cart ก็จะเห็นสินค้าทุกชิ้นที่ add ไป และสามารถหายอดผลรวมของสินค้าออกมาได้ และสามารถแก้ไขจำนวนสินค้าที่อยู่บนตระกร้าได้

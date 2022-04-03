@@ -1,0 +1,61 @@
+{
+  "product": [
+    {
+      "name": "test",
+      "price": 1,
+      "id": 6
+    },
+    {
+      "name": "Test",
+      "price": 10,
+      "id": 7
+    },
+    {
+      "name": "Milk",
+      "price": 4000,
+      "id": 8
+    },
+    {
+      "name": "PC",
+      "price": 80000,
+      "id": 9
+    },
+    {
+      "name": "Labtop",
+      "price": 9999,
+      "id": 10
+    }
+  ],
+  "cart": [
+    {
+      "name": "Phone",
+      "price": 5000,
+      "qty": 1,
+      "id": 1
+    },
+    {
+      "name": "test",
+      "price": 1,
+      "qty": 1,
+      "id": 2
+    },
+    {
+      "name": "test",
+      "price": 1,
+      "qty": 1,
+      "id": 3
+    },
+    {
+      "name": "test",
+      "price": 1,
+      "qty": 1,
+      "id": 4
+    },
+    {
+      "name": "Labtop",
+      "price": 9999,
+      "qty": 1,
+      "id": 5
+    }
+  ]
+}

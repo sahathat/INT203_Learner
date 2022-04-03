@@ -65,9 +65,11 @@ This a lesson.
     
     6.2. [vue routing](https://github.com/sahathat/INT203_Learner/tree/main/5/5-2/hellorouter)
 
-    6.3. [assignment7](https://github.com/sahathat/INT203_Learner/tree/main/5/assignment/7)
+    6.3. [assignment7](https://github.com/sahathat/INT203_Learner/tree/main/5/assignment/7/shopping_web)
     
-    6.4. [assignment8](https://github.com/sahathat/INT203_Learner/tree/main/5/assignment/8)
+    6.4. [assignment8](https://github.com/sahathat/INT203_Learner/tree/main/5/assignment/8/all_sum_game)
+
+    6.5. [extra]((https://github.com/sahathat/INT203_Learner/tree/main/5/assignment/extra1/mr_incredible_become_random)
 
   - State Management
   
