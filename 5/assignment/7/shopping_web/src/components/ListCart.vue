@@ -13,7 +13,8 @@ defineEmits(['delete','edit'])
 <template>
     <div>
         <ul v-for="item in cart">
-            <li>{{item.name}} - {{ item.price }} - {{ item.qty }}
+            <li>{{item.name}} - {{ item.price * item.qty }} - {{ item.qty }}
+            <button @click="$emit('edit',item)">edit</button>
             <button @click="$emit('delete',item.id)">-</button> </li>
         </ul>
     </div>

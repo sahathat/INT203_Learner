@@ -28,14 +28,6 @@
   ],
   "cart": [
     {
-      "name": "Phone",
-      "price": 5000,
-      "qty": 1,
-      "id": 1
-    },
-    {
-      "name": "test",
-      "price": 1,
       "qty": 1,
       "id": 2
     },

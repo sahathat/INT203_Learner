@@ -1,7 +1,8 @@
 <script setup>
-import { ref, onBeforeMount, onMounted } from "vue";
+import { ref, onBeforeMount } from "vue";
 import { useRouter } from "vue-router";
 import ListCart from "../components/ListCart.vue";
+import UpdateQty from "../components/UpdateQty.vue";
 
 const appRouter = useRouter();
 
@@ -44,10 +45,46 @@ let buyCart = async () => {
 };
 
 let goMain = () => appRouter.push({ name: "Home" });
+
+let currentCart = ref({});
+let hasEdit = ref(false)
+
+let toEditMode = (updatedCart) => {
+  currentCart.value = updatedCart
+  hasEdit.value = true
+  console.log(currentCart.value)
+}
+
+let updatedCart = async (editing) => {
+  let res = await fetch("http://localhost:5000/cart/" + editing.id, {
+    method: "PUT",
+    headers: {
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      qty: editing.qty,
+    }),
+  });
+  if (res.status === 200) {
+    const editedCart = await res.json();
+    cart.value = cart.value.map((item) =>
+      item.id === editedCart.id ? { ...item, qty: editedCart.qty } : item
+    );
+    console.log(editedCart.id + " has been update");
+  } else {
+    console.log("error by status " + res.status);
+  }
+  // set current note is default when updated note.
+  currentCart.value = {};
+  hasEdit.value = false
+};
+
 </script>
 
 <template>
-  <ListCart @delete="removeCart" :cart="cart"></ListCart>
+  <UpdateQty @update="updatedCart" :currentCart="currentCart" v-show="hasEdit"></UpdateQty>
+
+  <ListCart @delete="removeCart" :cart="cart" @edit="toEditMode"></ListCart>
 
   <p><b>Grand total:</b> {{ total }}</p>
 

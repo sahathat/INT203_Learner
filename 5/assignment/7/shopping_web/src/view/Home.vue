@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onBeforeMount } from "vue";
+import { ref, onBeforeMount, computed } from "vue";
 import CreateProduct from "../components/CreateProduct.vue";
 import ListProduct from "../components/ListProduct.vue";
 
@@ -50,6 +50,14 @@ let removeProduct = async (id) => {
   }
 };
 
+let text = ref("")
+
+let filterProduct = () => {
+  products.value = products.value.filter(item=>item.name.toLowerCase().includes(text.value.toLowerCase()))
+  console.log(products.value)
+}
+
+
 </script>
 
 <template>
@@ -58,7 +66,9 @@ let removeProduct = async (id) => {
     <CreateProduct
       @create="createProduct"
       :product="currentProduct"
-    ></CreateProduct>
+    ></CreateProduct> <br> <br>
+
+    <button @click="filterProduct">Search</button> <input type="search" v-model="text">
   </div>
   <div>
       <ListProduct @delete="removeProduct" :products="products"></ListProduct>

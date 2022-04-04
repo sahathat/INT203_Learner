@@ -1,5 +1,5 @@
 <script setup>
-import {ref, onBeforeMount, onBeforeUpdate} from 'vue'
+import {ref, onBeforeMount} from 'vue'
 
 let cart = ref([])
 

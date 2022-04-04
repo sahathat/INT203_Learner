@@ -34,7 +34,7 @@ const addToCart = async (newProduct, price) => {
     <p>Price: {{params.price * qty}}</p>
     <p>Quantity: <input type="number" v-model="qty" min="0"></p>
 
-    <AddToCart @addToCart="addToCart(params.name,parseInt(params.price * qty), qty)"></AddToCart>
+    <AddToCart @addToCart="addToCart(params.name,parseInt(params.price), qty)"></AddToCart>
 
     <button @click="goMain">back</button>
 </template>
