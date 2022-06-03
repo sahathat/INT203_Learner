@@ -132,11 +132,7 @@ let createdNote = async (newNote) => {
 ผล return ถ้าหาก add สำเร็จ จะ return 201 created ถ้าหาก add แล้วเกิดการ error จะ return 404 not found ถ้าหาก add ข้อมูลบน url ซ้ำจะ return 409 conflict
 ## Read (GET)	## Read (GET)
 ```js
-const editingNote = ref({})
-let toEditMode = (updatedNote) => {
-  editingNote.value = updatedNote
-  console.log(editingNote.value)
-}
+
 ```
 
 
@@ -145,6 +141,12 @@ let toEditMode = (updatedNote) => {
 
 ## Update (PUT)	## Update (PUT)
 ```js
+const editingNote = ref({})
+let toEditMode = (updatedNote) => {
+  editingNote.value = updatedNote
+  console.log(editingNote.value)
+}
+
 let updatedNote = async (editingNote) => {
   let res = await fetch("http://localhost:5000/notes/" + editingNote.id ,{
     method: 'PUT',
