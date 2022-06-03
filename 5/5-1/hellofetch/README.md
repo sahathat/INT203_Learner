@@ -132,7 +132,18 @@ let createdNote = async (newNote) => {
 ผล return ถ้าหาก add สำเร็จ จะ return 201 created ถ้าหาก add แล้วเกิดการ error จะ return 404 not found ถ้าหาก add ข้อมูลบน url ซ้ำจะ return 409 conflict
 ## Read (GET)	## Read (GET)
 ```js
-
+let getNotes = async () => {
+  const res = await fetch("http://localhost:5000/notes");
+  if (res.status === 200) {
+    notes.value = await res.json();
+    console.log("select successful");
+  } else {
+    console.log("error by status " + res.status);
+  }
+};
+onBeforeMount(async () => {
+  await getNotes();
+});
 ```
 
 
